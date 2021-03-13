@@ -207,6 +207,24 @@ img {
   padding-bottom: 1rem;
 }
 
+/* Headers for contact page and nutrition page */
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: red;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
 /* Footer */
 #footer img {
   width: 150px;

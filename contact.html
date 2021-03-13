@@ -4,7 +4,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>Contact Us</title>
   </head>
-  <body></body>
+  <body>
+    <!-- The header section for navbar-->
+    <header class="hero">
+      <div class="navbar" id="navbar">
+        <h1 class="logo">
+          <a href="/"><img src="img/logo.png" alt="Logo" /></a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="nutrition">Nutrition</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#" class="current">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contact form -->
+    <section id="contact" class="text-center py-3">
+      <div class="container card">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Here is how you can reach us</p>
+        <form>
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Subject"
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email Address"
+            />
+            <input
+              type="text"
+              class="text-input phone-input"
+              placeholder="Phone Number"
+            />
+            <textarea
+              class="text-input message-input"
+              placeholder="Enter message"
+            ></textarea>
+          </div>
+          <button class="btn btn-secondary">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer id="footer">
+      <div class="container-footer">
+        <div class="logo">
+          <img src="img/logo.png" alt="BlackFox" />
+        </div>
+        <div class="py-1">
+          <h2>Email newsletter</h2>
+          <form>
+            <input type="email" placeholder="Enter your email" />
+            <input type="submit" value="Subscribe" class="btn btn-sign" />
+          </form>
+        </div>
+        <div class="py-1">
+          <h2>Site Links</h2>
+          <ul class="list">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="py-1">
+          <h2>Social</h2>
+          <a
+            class="py-2"
+            href="https://instagram.com/blackfox_nutrition?igshid=1aivcmwi99a9c"
+            target="_blank"
+            ><i class="fab fa-instagram fa-4x"></i
+          ></a>
+          <a
+            class="py-2"
+            href="https://www.youtube.com/channel/UCL4Eo8GyGNODVtZrUWQKTtw"
+            target="_blank"
+            ><i class="fab fa-youtube fa-4x"></i
+          ></a>
+          <a
+            class="py-2"
+            href="https://www.facebook.com/103929798421381/posts/103932698421091/?d=n&substory_index=0"
+            target="_blank"
+            ><i class="fab fa-facebook fa-4x"></i
+          ></a>
+        </div>
+        <div>
+          <p>Copyright &copy, All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

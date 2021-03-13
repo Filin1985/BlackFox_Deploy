@@ -1,0 +1,58 @@
+#contact .container {
+  padding: 0 1.5rem;
+  margin: 4rem;
+  padding: 1.4rem;
+  overflow: hidden;
+}
+
+#contact .text-fields {
+  display: grid;
+  grid-template-areas:
+    "name email"
+    "subject phone"
+    "message message";
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+#contact input,
+#contact textarea {
+  border-radius: 5px;
+  border: 0;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+}
+
+/* Grid areas */
+#contact .name-input {
+  grid-area: name;
+}
+
+#contact .subject-input {
+  grid-area: subject;
+}
+
+#contact .email-input {
+  grid-area: email;
+}
+
+#contact .phone-input {
+  grid-area: phone;
+}
+
+#contact .message-input {
+  grid-area: message;
+  height: 100px;
+}
+
+#contact .text-input {
+  padding: 0.5rem 1rem;
+}
+
+#contact p {
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
