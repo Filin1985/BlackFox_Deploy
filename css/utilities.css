@@ -92,6 +92,12 @@
   padding: 3rem 0;
 }
 
+/* Margin */
+
+.my-1 {
+  margin: 1rem;
+}
+
 /* List style */
 .list li {
   padding: 0.5rem 0;
