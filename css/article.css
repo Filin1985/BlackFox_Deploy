@@ -1,0 +1,40 @@
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 7rem;
+  grid-gap: 1.5rem;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+
+.article {
+  margin: 2rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7rem;
+}
+
+.sticky aside {
+  margin-bottom: 1.5rem;
+}
+
+.sticky aside p {
+  padding-bottom: 1rem;
+}
+
+#article img {
+  max-height: 500px;
+  object-fit: cover;
+  height: auto;
+}

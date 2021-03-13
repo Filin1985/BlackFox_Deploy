@@ -1,0 +1,207 @@
+/* Text design */
+.text-primary {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2em;
+}
+
+.text-secondary {
+  color: #c4c4c4;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-heading {
+  font-size: 3rem;
+}
+
+/* Buttons */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:focus {
+  outline: 0;
+  transform: scale(0.9);
+}
+
+.btn-primary {
+  font-size: 24px;
+  letter-spacing: 0.2rem;
+  padding: 10px 100px !important;
+  font-weight: bold;
+  border-radius: 50px;
+  border: 1px solid;
+  padding: 10px 30px;
+}
+
+.btn-secondary {
+  background-color: rgba(82, 82, 82, 0.1);
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  padding: 10px 100px;
+  border: solid 1px red;
+  border-radius: 10px;
+}
+
+.btn-pdf {
+  background-color: rgba(82, 82, 82, 0.1);
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+  padding: 8px 8px;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.btn-sign {
+  background: #6e889a;
+  border-radius: 10px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  width: 100%;
+  padding: 0.2rem 2rem 0.2rem 2rem;
+}
+
+/* Paddings */
+
+.py-1 {
+  padding: 1rem;
+}
+
+.py-2 {
+  padding: 2rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+/* List style */
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted;
+  width: 90%;
+}
+
+.list li a:hover {
+  color: red;
+}
+
+/* Categories */
+.category {
+  --nut-color: #ad7c51;
+  --bio-color: #6e889a;
+  --fis-color: #185785;
+  --tr-color: #364856;
+}
+
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.category-nut {
+  background: var(--nut-color);
+}
+.category-bio {
+  background: var(--bio-color);
+}
+.category-fis {
+  background: var(--fis-color);
+}
+.category-tr {
+  background: var(--tr-color);
+}
+
+/* Card classes */
+.card {
+  background: #5252523d;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+/* Background for divs with text */
+.bg-primary-1 {
+  background-color: #5252523d;
+  margin: 5rem 0 5rem 5rem;
+  border-radius: 30px;
+}
+
+.bg-primary-2 {
+  background-color: #5252523d;
+  margin: 5rem 5rem 5rem 0;
+  border-radius: 30px;
+}
+
+/* Flex items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.flex-items > div {
+  padding: 20px;
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.flex-columns h2 {
+  font-size: 32px;
+  font-weight: 100;
+  margin: 2rem;
+  transition: flex 1s ease-in;
+}
