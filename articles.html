@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/article.css" />
+
     <title>Latest Articles</title>
   </head>
   <body>
@@ -263,18 +264,22 @@
               <h2>Categories</h2>
               <ul class="list">
                 <li>
-                  <a href="#"><i class="fas fa-chevron-right"></i> Nutrition</a>
+                  <a href="#" data-category="nutrition"
+                    ><i class="fas fa-chevron-right"></i> Nutrition</a
+                  >
                 </li>
                 <li>
-                  <a href="#"><i class="fas fa-chevron-right"></i> Training</a>
+                  <a href="#" data-category="training"
+                    ><i class="fas fa-chevron-right"></i> Training</a
+                  >
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="#" data-category="physiology"
                     ><i class="fas fa-chevron-right"></i> Physiology</a
                   >
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="#" data-category="biochemistry"
                     ><i class="fas fa-chevron-right"></i> Biochemistry</a
                   >
                 </li>
@@ -339,6 +344,7 @@
       </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="article.js"></script>
   </body>
 </html>

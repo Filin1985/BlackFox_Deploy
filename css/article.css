@@ -33,6 +33,14 @@
   padding-bottom: 1rem;
 }
 
+.hidden {
+  display: none;
+}
+
+.redtext {
+  color: red;
+}
+
 #article img {
   max-height: 500px;
   object-fit: cover;

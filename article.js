@@ -28,3 +28,55 @@ function DownloadFile(fileName) {
   };
   req.send();
 }
+
+$(function () {
+  $("#categories li a").click(function (e) {
+    e.preventDefault();
+    const cat = $(this).attr("data-category").toLowerCase();
+    $(".article.card").removeClass("hidden");
+    $(".article.card").each(function () {
+      const t = $(this).find(".data .category").text().toLowerCase();
+      if (cat != t) {
+        $(this).addClass("hidden");
+      }
+    });
+
+    $("#categories li a").removeClass("redtext");
+    // $('#categories li a[data-category="' + cat + '"]').addClass("redtext");
+    $(this).addClass("redtext");
+    // $("#categories li a").each(function () {
+    //   const t = $(this).attr("data-category").toLowerCase();
+    //   if (cat === t) {
+    //     $(this).addClass("redtext");
+    //   } else {
+    //     $(this).removeClass("redtext");
+    //   }
+    // });
+  });
+});
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   [...document.querySelectorAll("#categories li a")].forEach((link) => {
+//     link.addEventListener("click", (e) => {
+//       e.preventDefault();
+//       const cat = link.getAttribute("data-category").toLowerCase();
+//       document.querySelectorAll(".article.card").forEach((card) => {
+//         const t = card.querySelector(".data .category").innerText.toLowerCase();
+//         if (cat === t) {
+//           card.classList.remove("hidden");
+//         } else {
+//           card.classList.add("hidden");
+//         }
+//       });
+
+//       document.querySelectorAll("#categories li a").forEach((item) => {
+//         const t = item.getAttribute("data-category").toLowerCase();
+//         if (cat === t) {
+//           item.classList.add("redtext");
+//         } else {
+//           item.classList.remove("redtext");
+//         }
+//       });
+//     });
+//   });
+// });
