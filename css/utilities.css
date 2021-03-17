@@ -78,6 +78,18 @@
   padding: 0.2rem 2rem 0.2rem 2rem;
 }
 
+.btn-join {
+  background: #305168;
+  border-radius: 10px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  width: 70%;
+  padding: 0.2rem 2rem 0.2rem 2rem;
+}
+
 /* Paddings */
 
 .py-1 {

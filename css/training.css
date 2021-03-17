@@ -1,0 +1,54 @@
+.programms {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 0 1.5rem;
+  margin: 6rem 0 3rem 0;
+  overflow: hidden;
+}
+
+.program {
+  margin: 1rem;
+  position: relative;
+  background: #101010;
+  overflow: hidden;
+  border: 1px solid red;
+  border-radius: 2rem;
+}
+
+.program .btn {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  left: 15%;
+  bottom: 10%;
+  border: 1px solid #fff;
+}
+
+.program-image img {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.program-text {
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  top: 20%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+
+.program-text h2 {
+  margin-bottom: 8rem;
+}
+
+.program-text ul li {
+  padding: 0.7rem;
+}
