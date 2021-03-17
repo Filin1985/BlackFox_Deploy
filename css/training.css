@@ -52,3 +52,31 @@
 .program-text ul li {
   padding: 0.7rem;
 }
+
+.head {
+  grid-area: header;
+}
+
+.video {
+  grid-area: video;
+}
+
+.video-text {
+  grid-area: text;
+  font-size: 24px;
+}
+
+.library {
+  background: #5252523d;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "video video text text";
+  padding: 0 1.5rem 2rem 2rem;
+  margin: 0 0 2rem 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
