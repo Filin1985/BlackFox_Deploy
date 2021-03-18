@@ -392,6 +392,10 @@ img {
     letter-spacing: 0rem;
   }
 
+  .hero .content p {
+    display: none;
+  }
+
   #footer .logo {
     display: none;
   }
