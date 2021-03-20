@@ -281,10 +281,10 @@ img {
 }
 
 #footer .container-footer {
-  margin: 2rem;
+  margin: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
+  grid-gap: 1rem;
 }
 
 #footer .container-footer > *:last-child {
@@ -307,11 +307,17 @@ img {
 }
 
 #footer .logo {
-  margin: 1rem 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #footer .container-footer a i {
   margin-top: 1rem;
+}
+
+#footer .social {
+  display: flex;
 }
 
 /* Responsive Design */
@@ -342,6 +348,10 @@ img {
     font-size: 15px;
   }
 
+  #footer h2 {
+    font-size: 18px;
+  }
+
   .title-logo {
     width: 80%;
   }
@@ -351,7 +361,7 @@ img {
   }
 
   #footer .logo {
-    margin: 2rem 6rem;
+    margin: 2rem 4rem;
   }
 
   .nutrition h2 {
