@@ -42,7 +42,7 @@
   transition: 0.5s;
 }
 
-.team .item .action a {
+.team .item .action button {
   display: inline-block;
   color: #fff;
   text-decoration: none;
@@ -52,5 +52,45 @@
 }
 
 .team .item:hover .action {
+  opacity: 1;
+}
+
+.popover {
+  display: inline-block;
+  position: relative;
+}
+
+.popover_menu {
+  border-radius: 10px;
+  background: rgba(59, 59, 59, 0.9);
+  list-style-type: none;
+  min-width: 100%;
+  padding: 0.5rem 0;
+  position: fixed;
+  flex-direction: row;
+  top: 10%;
+  left: 0;
+  box-shadow: 0 2px 3px 0 rgba(63, 63, 68, 0.2);
+  transition-property: transform, opacity;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+  transform: scale(0.9);
+  transform-origin: top left;
+  opacity: 0;
+  z-index: 50;
+}
+
+.popover_menu:after {
+  left: 0.5rem;
+  content: " ";
+  height: 0;
+  width: 0;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 7px;
+}
+
+.popover_active .popover_menu {
+  transform: scale(1);
+  display: block;
   opacity: 1;
 }

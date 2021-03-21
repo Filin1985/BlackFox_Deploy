@@ -84,3 +84,177 @@
 iframe {
   z-index: 20;
 }
+
+/* Modal styling */
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
+
+.modal {
+  background-color: #303030d5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  background: #101010;
+  color: #fff;
+  padding: 15px;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-form div {
+  margin: 15px 0;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-form .form-input {
+  padding: 8px;
+  width: 100%;
+}
+
+.modal-form .form-input:focus {
+  outline: none;
+}
+
+.close-btn {
+  margin: 1rem;
+  color: #fff;
+  border: none;
+  background: transparent;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.close-btn:focus {
+  outline: none;
+}
+
+@media (max-width: 1500px) {
+  .program-text h2 {
+    font-size: 18px;
+    margin-bottom: 5rem;
+  }
+
+  .program-text ul li {
+    font-size: 14px;
+  }
+
+  .program-image img {
+    height: 70vh;
+  }
+
+  .video-text {
+    font-size: 22px;
+  }
+
+  iframe {
+    width: 590px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .program {
+    margin: 0.5rem;
+  }
+
+  .program-text h2 {
+    font-size: 16px;
+    margin-top: -1rem;
+    margin-bottom: 4rem;
+  }
+
+  .program-text ul li {
+    font-size: 12px;
+  }
+
+  .video-text {
+    font-size: 20px;
+    padding-left: 2rem;
+  }
+
+  iframe {
+    width: 580px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .video-text {
+    font-size: 16px;
+    padding-left: 3rem;
+  }
+
+  iframe {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 960px) {
+  .program {
+    margin: 0.3rem;
+  }
+
+  .program-text h2 {
+    font-size: 14px;
+    margin-top: -3rem;
+  }
+
+  .program-text ul li {
+    font-size: 11px;
+  }
+
+  .program-image img {
+    height: 60vh;
+  }
+
+  .video-text {
+    font-size: 14px;
+    padding-left: 5rem;
+  }
+
+  iframe {
+    width: 460px;
+    height: 260px;
+  }
+}

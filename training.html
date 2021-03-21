@@ -20,9 +20,9 @@
     <!-- The header section for navbar-->
     <header class="hero">
       <div class="navbar" id="navbar">
-        <h1 class="logo">
+        <div class="logo">
           <a href="/"><img src="img/logo.png" alt="Logo" /></a>
-        </h1>
+        </div>
         <nav>
           <ul>
             <li><a href="#" class="current">Training</a></li>
@@ -55,7 +55,9 @@
               <li>breathing, nutrition and lifestyle resources</li>
             </ul>
           </div>
-          <button class="btn btn-join">Join</button>
+          <button id="cta-btn" class="btn btn-join cta-btn" id="open">
+            Join
+          </button>
         </div>
 
         <div class="program">
@@ -160,6 +162,60 @@ gyroscope; picture-in-picture"
           </p>
         </div>
       </div>
+
+      <!-- Modal -->
+      <div class="modal-container" id="modal">
+        <div class="modal">
+          <button class="close-btn" id="close">
+            <i class="fa fa-times"></i>
+          </button>
+          <div class="modal-header">
+            <h3>Sign Up</h3>
+          </div>
+          <div class="modal-content">
+            <p>Register with us to get offers, support and more</p>
+            <form class="modal-form">
+              <div>
+                <label for="name">Name</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  placeholder="Enter Name"
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="email"
+                  placeholder="Enter Email"
+                />
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input
+                  class="form-input"
+                  type="password"
+                  id="password"
+                  placeholder="Enter Password"
+                />
+              </div>
+              <div>
+                <label for="password2">Confirm Password</label>
+                <input
+                  class="form-input"
+                  type="password"
+                  id="password2"
+                  placeholder="Confirm Password"
+                />
+              </div>
+              <input type="submit" value="submit" class="btn btn-pdf" />
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Footer section -->
     <footer id="footer">
@@ -184,7 +240,7 @@ gyroscope; picture-in-picture"
         </div>
         <div class="py-1">
           <h2>Social</h2>
-          <div>
+          <div class="social">
             <a
               class="py-2"
               href="https://instagram.com/blackfox_nutrition?igshid=1aivcmwi99a9c"
@@ -210,5 +266,7 @@ gyroscope; picture-in-picture"
         </div>
       </div>
     </footer>
+
+    <script src="training.js"></script>
   </body>
 </html>
