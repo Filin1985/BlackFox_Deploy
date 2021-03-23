@@ -43,7 +43,9 @@ img {
 }
 
 .navbar img {
-  width: 20%;
+  max-width: 20%;
+  min-width: 20%;
+  object-fit: fill;
 }
 
 .navbar a {
@@ -64,6 +66,19 @@ img {
 
 .navbar ul {
   display: flex;
+}
+
+.menu,
+.exit {
+  display: none;
+}
+
+.open-nav {
+  display: grid;
+}
+
+#content {
+  opacity: 1;
 }
 
 /* Header */
@@ -111,7 +126,7 @@ img {
 }
 
 .hero * {
-  z-index: 10;
+  z-index: 1;
 }
 
 /* Training section index.html */
@@ -382,6 +397,10 @@ nav .mobile {
     letter-spacing: 0.1rem;
   }
 
+  .section-title {
+    font-size: 1.7rem;
+  }
+
   #articles .container-articles {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -393,7 +412,7 @@ nav .mobile {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1010px) {
   .navbar a {
     font-size: smaller;
     padding: 8px 8px;
@@ -404,12 +423,22 @@ nav .mobile {
     width: 30%;
   }
 
-  #footer h2 {
-    font-size: 14px;
+  .section-title {
+    font-size: 1.5rem;
   }
 
   .title-logo {
-    width: 60%;
+    width: 70%;
+    display: block;
+  }
+
+  .nutrition h2,
+  .container-articles p {
+    font-size: 20px;
+  }
+
+  #footer h2 {
+    font-size: 14px;
   }
 
   #footer img {
@@ -434,30 +463,83 @@ nav .mobile {
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 850px) {
+  .open-nav {
+    display: grid !important;
+  }
+
+  .navbar nav .menu,
+  .exit {
+    display: block;
+  }
+
+  .navbar nav .menu {
+    width: 1.5em;
+    cursor: pointer;
+  }
+
+  .navbar nav ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #141414f3;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: none;
+    place-content: center;
+    z-index: 100;
+  }
+
+  .navbar nav ul li a {
+    margin: 2em;
+    display: block;
+    font-size: 1.4rem;
+  }
+
+  .navbar nav .exit svg {
+    width: 1.5em;
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    cursor: pointer;
+  }
+
+  .nutrition h2,
+  .container-articles p {
+    font-size: 18px;
+  }
+
+  .nutrition a {
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+  }
+
+  #footer {
+    margin-top: -1.5rem;
+  }
+
+  #footer .container-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  #footer .container-footer > *:last-child {
+    grid-column: 1 / span 2;
+  }
+}
+
+@media (max-width: 740px) {
 }
 
 @media (max-width: 600px) {
-  .navbar {
-    padding: 0;
-    justify-content: center;
-  }
-
-  .navbar .logo {
-    display: none;
-  }
-
-  .navbar a {
-    font-size: 8px;
-
-    letter-spacing: 0rem;
-  }
-
   .hero .content p {
-    display: none;
-  }
-
-  #footer .logo {
     display: none;
   }
 
@@ -474,10 +556,6 @@ nav .mobile {
   #nutritions .nutrition {
     grid-template-columns: 1fr;
     grid-template-areas: "first" "third" "fourth";
-  }
-
-  .nutrition h2 {
-    font-size: 20px;
   }
 
   #nutritions .nutrition .item-2 {

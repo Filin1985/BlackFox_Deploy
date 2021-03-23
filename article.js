@@ -29,6 +29,8 @@ function DownloadFile(fileName) {
   req.send();
 }
 
+// Filter articles
+
 $(function () {
   $("#categories li a").click(function (e) {
     e.preventDefault();

@@ -258,3 +258,18 @@ iframe {
     height: 260px;
   }
 }
+
+@media (max-width: 960px) {
+  .programms {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .program-image img {
+    height: 50vh;
+  }
+}
