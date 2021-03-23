@@ -438,7 +438,7 @@ nav .mobile {
   }
 
   #footer h2 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   #footer img {
@@ -490,7 +490,7 @@ nav .mobile {
     list-style: none;
     display: none;
     place-content: center;
-    z-index: 100;
+    z-index: 10;
   }
 
   .navbar nav ul li a {
