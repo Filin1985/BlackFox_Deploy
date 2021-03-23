@@ -312,3 +312,14 @@ iframe {
     font-size: 13px;
   }
 }
+
+@media (max-width: 400px) {
+  .program-image img {
+    height: 60vh;
+  }
+
+  iframe {
+    width: 310px;
+    height: 240px;
+  }
+}
