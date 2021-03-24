@@ -113,7 +113,7 @@ img {
 
 .hero .content .btn {
   margin: 45rem 0 10rem 0;
-  padding: 10;
+  padding: 1rem 5rem;
 }
 
 .hero .content p {
@@ -554,7 +554,8 @@ nav .mobile {
   }
 
   .hero .content .btn {
-    padding: 0;
+    font-size: 1em;
+    padding: 1rem 3rem;
   }
 
   /* Stack Grid Items */

@@ -193,7 +193,7 @@ iframe {
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1250px), (max-height: 1050px) {
   .program {
     margin: 0.5rem;
   }
@@ -230,9 +230,14 @@ iframe {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 960px), (max-height: 960px) {
   .program {
     margin: 0.3rem;
+  }
+
+  .programms {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 
   .program-text h2 {
@@ -256,14 +261,6 @@ iframe {
   iframe {
     width: 450px;
     height: 260px;
-  }
-}
-
-@media (max-width: 960px) {
-  .programms {
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 1rem;
   }
 }
 
@@ -312,5 +309,19 @@ iframe {
 
   .program-text ul li {
     padding: 0.5rem;
+  }
+}
+
+@media (max-height: 830px) {
+  .program {
+    min-height: 450px;
+  }
+
+  #training img {
+    min-height: 450px;
+  }
+
+  .program-text ul li {
+    padding: 0.4rem;
   }
 }
