@@ -41,7 +41,7 @@
 .btn-primary {
   font-size: 24px;
   letter-spacing: 0.2rem;
-  padding: 10px 100px !important;
+  padding: 10px 100px;
   font-weight: bold;
   border-radius: 50px;
   border: 1px solid;

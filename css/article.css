@@ -108,8 +108,19 @@
     margin-top: 2rem;
     margin: 2rem -2rem -2rem -2rem;
   }
-  .page-container {
+  /* .page-container {
     display: grid;
     grid-template-columns: 1fr;
+  } */
+
+  .page-container > article.card {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .sticky {
+    grid-column: 1;
+    grid-row: 1;
+    position: static;
   }
 }

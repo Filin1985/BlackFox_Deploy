@@ -9,11 +9,15 @@ let content = get("content");
 open.addEventListener("click", (e) => {
   e.preventDefault();
   nav.classList.add("open-nav");
-  content.style.opacity = 0.4;
 });
 
 exit.addEventListener("click", (e) => {
   e.preventDefault();
   nav.classList.remove("open-nav");
-  content.style.opacity = 1;
+});
+
+document.querySelectorAll("#nav li a").forEach((i) => {
+  i.addEventListener("click", () => {
+    nav.classList.remove("open-nav");
+  });
 });
