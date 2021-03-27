@@ -62,6 +62,7 @@
 }
 
 .popover_menu {
+  font-size: 15px;
   border-radius: 10px;
   background: rgba(59, 59, 59, 0.9);
   list-style-type: none;
@@ -69,7 +70,7 @@
   padding: 0.5rem 0;
   position: absolute;
   flex-direction: row;
-  top: 10%;
+  top: 0%;
   left: 0;
   box-shadow: 0 2px 3px 0 rgba(63, 63, 68, 0.2);
   transition-property: transform, opacity;
@@ -81,6 +82,11 @@
   z-index: 50;
   pointer-events: none;
   user-select: none;
+  text-align: left;
+}
+
+span {
+  text-decoration: underline;
 }
 
 .popover_menu:after {
