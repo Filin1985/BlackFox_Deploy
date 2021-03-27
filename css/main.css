@@ -91,7 +91,7 @@ img {
 
 /* Header */
 .hero-main {
-  background: url("../img/Hero_section.jpg") no-repeat center center/cover;
+  background: url("../img/main/Hero_section.jpg") no-repeat center center/cover;
   height: 100vh;
   position: relative;
 }
