@@ -432,6 +432,10 @@ nav .mobile {
     width: 30%;
   }
 
+  .hero-main {
+    height: unset;
+  }
+
   .section-title {
     font-size: 1.5rem;
   }
@@ -444,6 +448,10 @@ nav .mobile {
   .nutrition h2,
   .container-articles p {
     font-size: 20px;
+  }
+
+  #trainings .btn {
+    margin-top: 0.5rem;
   }
 
   #footer h2 {
@@ -470,6 +478,9 @@ nav .mobile {
     font-size: 13px;
     width: 80%;
   }
+}
+
+@media (max-height: 1000px) {
 }
 
 @media (max-width: 850px) {
@@ -576,13 +587,3 @@ nav .mobile {
     display: none;
   }
 }
-
-@media (max-height: 1000px) {
-  .hero-main {
-    height: unset;
-  }
-
-  #trainings .btn {
-    margin-top: 0.5rem;
-  }
-} ;
