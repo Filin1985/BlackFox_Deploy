@@ -1,4 +1,5 @@
 /* Basic styles */
+/* importing the font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 
 * {
@@ -27,7 +28,7 @@ img {
   width: 100%;
 }
 
-/* Navbar */
+/* Navbar styling */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -76,11 +77,13 @@ img {
   display: flex;
 }
 
+/* To make invisible svg open and exit icons */
 .menu,
 .exit {
   display: none;
 }
 
+/* Grid template for mobile-nav */
 .open-nav {
   display: grid;
 }
@@ -89,7 +92,7 @@ img {
   opacity: 1;
 }
 
-/* Header */
+/* The fisrt section of the index page  */
 .hero-main {
   background: url("../img/main/Hero_section.jpg") no-repeat center center/cover;
   height: 100vh;
@@ -139,7 +142,6 @@ img {
 }
 
 /* Training section index.html */
-
 #trainings {
   display: flex;
   flex-direction: column;
@@ -159,6 +161,7 @@ img {
   width: 90vw;
 }
 
+/* Panel styling with transition effect */
 .panel {
   background-size: auto 100%;
   background-position: center;
@@ -192,6 +195,8 @@ img {
 }
 
 /* Nutrition part of the main section */
+
+/* For grid system I used the name for each part. It is easier for me to work with them in this way */
 .item-1 {
   grid-area: first;
 }
@@ -242,6 +247,7 @@ img {
 }
 
 /* Articles section */
+/* Here I used grid system with different areas for different article */
 #articles .container {
   margin: 2rem;
 }
@@ -277,7 +283,7 @@ img {
   padding-bottom: 1rem;
 }
 
-/* Headers for contact page and nutrition page */
+/* Headers for contact page, about page and nutrition page */
 .section-title {
   font-size: 2rem;
   display: block;
@@ -450,6 +456,11 @@ nav .mobile {
     font-size: 20px;
   }
 
+  .btn.btn-sign {
+    font-size: 13px;
+    width: 80%;
+  }
+
   #trainings .btn {
     margin-top: 0.5rem;
   }
@@ -473,14 +484,6 @@ nav .mobile {
   #footer .list {
     font-size: 12px;
   }
-
-  .btn.btn-sign {
-    font-size: 13px;
-    width: 80%;
-  }
-}
-
-@media (max-height: 1000px) {
 }
 
 @media (max-width: 850px) {
@@ -553,9 +556,6 @@ nav .mobile {
   #footer .container-footer > *:last-child {
     grid-column: 1 / span 2;
   }
-}
-
-@media (max-width: 740px) {
 }
 
 @media (max-width: 600px) {

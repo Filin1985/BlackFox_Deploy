@@ -95,12 +95,14 @@
     <!-- Article part -->
     <section id="article">
       <div class="container">
+        <!-- Each article placed in the page-container -->
         <div class="page-container">
           <article class="card">
             <div class="article card">
               <img id="fiber" src="./img/articles/Fiber-1.jpg" alt="Fiber" />
               <div class="title">
                 <h1 class="text-heading">Fiber</h1>
+                <!-- Button for dounwload the pdf of the article -->
                 <button
                   class="btn btn-pdf"
                   type="button"
@@ -133,6 +135,7 @@
               />
               <div class="title">
                 <h1 class="text-heading">Overtraining</h1>
+                <!-- Button for dounwload the pdf of the article -->
                 <button
                   class="btn btn-pdf"
                   type="button"
@@ -169,6 +172,7 @@
               />
               <div class="title">
                 <h1 class="text-heading">Biochemisry</h1>
+                <!-- Button for dounwload the pdf of the article -->
                 <button
                   class="btn btn-pdf"
                   type="button"
@@ -201,11 +205,12 @@
               />
               <div class="title">
                 <h1 class="text-heading">Muscle Structure</h1>
+                <!-- Button for dounwload the pdf of the article -->
                 <button
                   class="btn btn-pdf"
                   type="button"
                   value="Download PDF File"
-                  onclick="DownloadFile('fiber.pdf')"
+                  onclick="DownloadFile('muscle.pdf')"
                 >
                   Download pdf
                 </button>
@@ -236,6 +241,7 @@
               />
               <div class="title">
                 <h1 class="text-heading">Protein</h1>
+                <!-- Button for dounwload the pdf of the article -->
                 <button
                   class="btn btn-pdf"
                   type="button"
@@ -271,6 +277,7 @@
               />
               <div class="title">
                 <h1 class="text-heading">Alcohol metabolism</h1>
+                <!-- Button for dounwload the pdf of the article -->
                 <button
                   class="btn btn-pdf"
                   type="button"
@@ -305,6 +312,7 @@
               />
               <div class="title">
                 <h1 class="text-heading">Hunger</h1>
+                <!-- Button for dounwload the pdf of the article -->
                 <button
                   class="btn btn-pdf"
                   type="button"
@@ -336,6 +344,7 @@
             </div>
           </article>
 
+          <!-- Stycky filter for categories -->
           <div class="sticky">
             <aside id="categories" class="card">
               <h2>Categories</h2>
@@ -423,8 +432,9 @@
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="article.js"></script>
-    <script src="mobilenav.js"></script>
+    <!-- The script that allow us to filter the articles by main theme -->
+    <script src="js/article.js"></script>
+    <!-- This cript is for making it possible to click on the svg icon of mobile-nav for opening and closing it -->
+    <script src="js/mobilenav.js"></script>
   </body>
 </html>

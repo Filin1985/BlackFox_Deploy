@@ -1,3 +1,4 @@
+/* Styling  the Articles page */
 .page-container {
   display: grid;
   grid-template-columns: 5fr 2fr;
@@ -19,6 +20,7 @@
   justify-content: space-between;
 }
 
+/* Making the categories part sticky */
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -47,6 +49,7 @@
   height: auto;
 }
 
+/* Respinsive design */
 @media (max-width: 1200px) {
   .page-container {
     margin: 7rem 3rem 3rem 3rem;

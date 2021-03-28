@@ -92,8 +92,9 @@
       </div>
     </header>
 
-    <!-- Contact Us section -->
+    <!-- About Us section -->
     <section id="about" class="text-center py-3">
+      <!-- Consists of several items. Each item for each person. Item has the popover part that will pops up after clicking the info button -->
       <div class="container">
         <h2 class="section-title">About Our Team</h2>
         <div class="bottom-line"></div>
@@ -107,15 +108,21 @@
             <img src="img/team/NikolayFayustov_team.jpg" alt="Coach 1" />
             <div class="popover action">
               <button class="btn btn-pdf popover_trigger">Info</button>
+              <!-- This is popover part -->
               <ul class="popover_menu">
                 <li><span>Age:</span> 31</li>
-                <li><span>Experience:</span> 10 years</li>
-                <li><span>Specialisation:</span> Nutrition, CrossFit</li>
-                <li><span>Education & Certification:</span> Sport Nutrition</li>
+                <li><span>Experience:</span> 5 years</li>
+                <li>
+                  <span>Specialisation:</span> CrossFit, Strength & Condition,
+                  Nutrition, FMT Basic
+                </li>
+                <li>
+                  <span>Education & Certification:</span> Strength & Condition
+                  ISSA, Nutrition Coach NSA
+                </li>
                 <li>
                   <span>Achievements & Awards:</span>
-                  Participant of the Weightlifting World Championships (4th and
-                  8th places)
+                  Winner of European Showdown 2019 (teams)
                 </li>
               </ul>
             </div>
@@ -143,16 +150,19 @@
             <div class="popover action">
               <button class="btn btn-pdf popover_trigger">Info</button>
               <ul class="popover_menu">
-                <li><span>Age:</span> 33</li>
-                <li><span>Experience:</span> 13 years</li>
-                <li><span>Specialisation:</span> Weightlifting</li>
+                <li><span>Age:</span> 26</li>
+                <li><span>Experience:</span> 6 years</li>
                 <li>
-                  <span>Education & Certification:</span> Sports Management,
-                  Pedagogy
+                  <span>Specialisation:</span> CrossFit, Strength & Condition,
+                  Nutrition, Judo
+                </li>
+                <li>
+                  <span>Education & Certification:</span> Nutrition Coach NSA,
+                  Coach FPA, Pedagogy
                 </li>
                 <li>
                   <span>Achievements & Awards:</span>
-                  Participant of the Regional Crossfit Games (2 sixth places)
+                  Medalist of the Russian Functional All-around Championship
                 </li>
               </ul>
             </div>
@@ -199,7 +209,9 @@
                 </li>
                 <li>
                   <span>Achievements & Awards:</span>
-                  Two-times European youth silver medalist in Weightlifting
+                  Master of Sports of International Class in Weightlifting
+                  (Snatch 116 rg, C&J 145 kg), Two-times European youth silver
+                  medalist in Weightlifting
                 </li>
               </ul>
             </div>
@@ -259,7 +271,9 @@
       </div>
     </footer>
 
-    <script src="about.js"></script>
-    <script src="mobilenav.js"></script>
+    <!-- This script allow us to show the information abput each person by clicking the info button -->
+    <script src="js/about.js"></script>
+    <!-- This cript is for making it possible to click on the svg icon of mobile-nav for opening and closing it -->
+    <script src="js/mobilenav.js"></script>
   </body>
 </html>

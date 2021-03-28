@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This link allow me to use the icons from  font-awesome-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -22,6 +23,7 @@
           <a href="/"><img src="img/logo.png" alt="Logo" /></a>
         </div>
         <nav>
+          <!-- This svg is the image for the mobile-nav which allow us to click on it andopen the nav  -->
           <svg class="menu" id="menu-btn" viewBox="0 0 27.329 17">
             <g transform="translate(-415.671 -19)">
               <line
@@ -52,6 +54,7 @@
           </svg>
           <ul id="nav">
             <li class="exit" id="exit-btn">
+              <!-- This svg is the image for closing the mobile-nav -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="48.968"
@@ -80,6 +83,7 @@
                 </g>
               </svg>
             </li>
+            <!-- Links on the navbar section -->
             <li><a href="#trainings">Training</a></li>
             <li><a href="#nutritions">Nutrition</a></li>
             <li><a href="#articles">Articles</a></li>
@@ -89,6 +93,7 @@
         </nav>
       </div>
 
+      <!-- Central content of the main page -->
       <div class="content" id="content">
         <div class="title-logo">
           <img src="img/logo_title_crop.png" alt="Name of the website" />
@@ -98,7 +103,7 @@
       </div>
     </header>
 
-    <!-- The training section for the first page -->
+    <!-- The training section for the first page. Шt consists of 5 panels, clicking on which increases the width of the selected panel-->
     <section id="trainings">
       <div class="container-training">
         <div
@@ -135,7 +140,7 @@
       <a href="training.html" class="btn btn-secondary">Explore</a>
     </section>
 
-    <!-- Nutrition section -->
+    <!-- Nutrition section. Consists of two rows -->
     <section id="nutritions">
       <div class="nutrition">
         <div class="items item-1">
@@ -143,10 +148,11 @@
         </div>
         <div class="items item-2">
           <h2>
-            The main goal of BlackFox is to improve the quality of life. The
-            CrossFit Pyramid identifies things that are important to the sport
-            and the health mission. This is one of the simplest, but at the same
-            time deep concepts to date
+            We do not offer an author's technique simply because there are none!
+            With #BlackFoxNutrition, we have synthesized all the science-based
+            nutritional fundamentals to create a detailed set of instructions
+            that you can incorporate into your daily life and learn healthy
+            eating habits with us!
           </h2>
         </div>
         <div class="items item-3">
@@ -164,7 +170,7 @@
       </div>
     </section>
 
-    <!-- Articles section -->
+    <!-- Articles section. This section consists of grid items. I created the container and in this container I placed article tag. Each article contains some information. Each article has the anchor tag which leads us to the articles.html -->
     <section id="articles">
       <div class="container">
         <div class="container-articles">
@@ -353,7 +359,9 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
-    <script src="mobilenav.js"></script>
+    <!-- It is the script for tha main.html where we can find the code for animation of panels in training section of this page -->
+    <script src="js/main.js"></script>
+    <!-- This cript is for making it possible to click on the svg icon of mobile-nav for opening and closing it -->
+    <script src="js/mobilenav.js"></script>
   </body>
 </html>
